@@ -2,7 +2,14 @@
   "name": "open-in-sublime-text",
   "displayName": "open in sublime text",
   "description": "open folder in sublime text",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "publisher": "engineforce",
+  "license": "MIT",
+  "repository": "https://github.com/engineforce/open-in-sublime-text-vscode-extension",
+  "author": {
+    "name": "engineforce",
+    "email": "engineforce@gmail.com"
+  },
   "engines": {
     "vscode": "^1.66.0"
   },
