@@ -9,15 +9,7 @@ function activate(context) {
     'open-in-sublime-text.openInSublimeText',
     (e) => {
       console.log(e)
-      fs.stat(e.fsPath, (err, stats) => {
-        if (err) return
-        let dirPath = e.fsPath
-        if (stats.isFile()) {
-          dirPath = path.dirname(dirPath)
-        }
-        console.log(dirPath)
-        execSh(`open -a "Sublime Text" "${dirPath}"`)
-      })
+      execSh(`open -a "Sublime Text" "${e.fsPath}"`)
     }
   )
   context.subscriptions.push(disposable)
